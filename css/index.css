@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-image: url(/assets/map-top.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+main {
+    width: 25%;
+    margin-left: 15px;
+    border-bottom: 1px solid grey;
+}
+
+footer {
+    width: 25%;
+    margin-left: 15px;
+}
+
+nav {
+    margin: 20px 100px 0px 10px;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 60px;
+    margin: 0;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+p {
+    font-weight: 300;
+}
+
+b {
+    font-weight: 500;
+}
+
+.top-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gov-logos {
+    display: flex;
+    gap: 10px;
+}
+
+.tab {
+    cursor: pointer;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.content-container {
+    display: flex;
+    gap: 52px;
+    margin-bottom: 40px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column-1 {
+    width: 70%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.column-2 {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text p {
+    margin: 0;
+}
+
+.honey-food {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.profile-information {
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    padding: 5px;
+}
+
+.profile-information p {
+    margin: 0;
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        background-image: url(/assets/map-top.png), linear-gradient(#001125, #001125);
+        background-size: contain, 100% 100%;
+        background-repeat: no-repeat, no-repeat;
+        background-position: top, bottom;
+        height: 100%;
+        width: 100%;
+    }
+
+    main, footer {
+        width: 90%;
+    }
+
+    main h1 {
+        font-size: 40px;
+        text-align: left;
+    }
+
+    nav {
+        margin: 0px 30px 0px 0px;
+    }
+
+    .top-logo {
+        margin-bottom: 220px;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
